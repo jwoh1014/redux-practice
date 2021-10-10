@@ -10,25 +10,25 @@ import {Provider} from 'react-redux'
     
 ### Reducer
 (example)
-    function reducer(state = 초기값, 액션){
-    if (액션.type === '항목추가'){
-      let copy = [ ...state ]
-      copy.push();
-      return copy
+    function reducer(state = 초기값, 액션){ <br/>
+    if (액션.type === '항목추가'){<br/>
+      let copy = [ ...state ]<br/>
+      copy.push();<br/>
+      return copy<br/>
     }
-     else if (액션.type === '수량증가'){
-       let copy = [...state]
-       copy[0].quan++;
-       return copy
-     } else if(액션.type === '수량감소'){
-      let copy = [...state]
-      copy[0].quan--;
-      return copy
-     } else {
-         return state
-     }
-    }
-
+     else if (액션.type === '수량증가'){<br/>
+       let copy = [...state]<br/>
+       copy[0].quan++;<br/>
+       return copy<br/>
+     } else if(액션.type === '수량감소'){<br/>
+      let copy = [...state]<br/>
+      copy[0].quan--;<br/>
+      return copy<br/>
+     } else {<br/>
+         return state<br/>
+     }<br/>
+    }<br/>
+<br/>
     let store = createStore(combineReducers({reducer, reducer2}));
     
 ### useSelector, useDispatch
@@ -36,7 +36,7 @@ import {Provider} from 'react-redux'
 import { connect, useDispatch } from 'react-redux';
 import {useSelector} from 'react-redux'
 
-function Cart (props){
-  let state = useSelector((state) => state )
-  console.log(state.reducer)
-  let dispatch = useDispatch();
+function Cart (props){<br/>
+  let state = useSelector((state) => state )<br/>
+  console.log(state.reducer)<br/>
+  let dispatch = useDispatch();<br/>
