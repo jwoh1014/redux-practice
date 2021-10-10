@@ -9,7 +9,7 @@ import {Provider} from 'react-redux'
     </Provider>
     
 ### Reducer
-(example)
+(example)<br/>
     function reducer(state = 초기값, 액션){ <br/>
     if (액션.type === '항목추가'){<br/>
       let copy = [ ...state ]<br/>
